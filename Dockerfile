@@ -22,5 +22,4 @@ VOLUME /data/foundryvtt
 VOLUME /host
 EXPOSE 30000
 
-ENTRYPOINT ["tail", "-f", "/dev/null"]
-#ENTRYPOINT /opt/foundryvtt/run-server.sh
+ENTRYPOINT /opt/foundryvtt/run-server.sh
