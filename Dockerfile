@@ -7,8 +7,11 @@ RUN deluser node && \
     adduser --disabled-password fvtt && \
     chown fvtt:fvtt /opt/foundryvtt && \
     chown fvtt:fvtt /data/foundryvtt && \
+    chown -R fvtt:fvtt /host && \
+    chmod -R g+s /host && \
     chmod g+s /opt/foundryvtt && \
     chmod g+s /data/foundryvtt
+    
 USER fvtt
 
 COPY --chown=fvtt run-server.sh /opt/foundryvtt
