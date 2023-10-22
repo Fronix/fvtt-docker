@@ -6,4 +6,4 @@
 cd /opt/foundryvtt
 find /host -type f -name [f,F]oundry[vtt,VTT]*.zip -exec cp '{}' . ';'
 unzip -o *.zip && rm *.zip
-node resources/app/main.js --dataPath=/data/foundryvtt
+# node resources/app/main.js --dataPath=/data/foundryvtt
