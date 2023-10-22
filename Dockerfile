@@ -4,6 +4,7 @@ RUN deluser node && \
     mkdir /opt/foundryvtt && \
     mkdir /data && \
     mkdir /data/foundryvtt && \
+    mkdir /host && \
     adduser --disabled-password fvtt && \
     chown fvtt:fvtt /opt/foundryvtt && \
     chown fvtt:fvtt /data/foundryvtt && \
