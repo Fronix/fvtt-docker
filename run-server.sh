@@ -4,9 +4,6 @@
 # /opt/foundryvtt, unzip and remove it. Then start the foundry app
 
 cd /opt/foundryvtt
-echo "Copying zip file..."
-find /host -type f -name [f,F]oundry[vtt,VTT]*.zip -exec cp '{}' . ';'
-
 echo "Unzipping..."
 unzip -o *.zip && rm *.zip
 
